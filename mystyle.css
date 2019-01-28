@@ -19,3 +19,7 @@ div {
   clear: left;
 }
 
+.clearfix {
+  overflow: auto;
+}
+
