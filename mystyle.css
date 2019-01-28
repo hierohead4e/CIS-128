@@ -15,4 +15,7 @@ img {
   float: none;
 }
 
+div {
+  clear: left;
+}
 
