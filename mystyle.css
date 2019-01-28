@@ -13,9 +13,10 @@ h2 {
 
 img {
   float: left;
+  clear: left;
   margin-right: 10px;
   margin-bottom: 10px
-  border: solid 1px;
+  border: solid black 1px;
   padding: 2px;
 }
 
