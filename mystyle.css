@@ -14,12 +14,17 @@ h2 {
 }
 
 p {
-  margin-top: 100px;
-  margin-bottom: 100px;
+  margin-top: 50px;
+  margin-bottom: 50px;
   margin-right: 400px;
   margin-left: 400px;
 }
 
+ul {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  margin-right: 400px;
+  margin-left: 400px;
 img {
   float: left;
   clear: left;
@@ -27,6 +32,4 @@ img {
   margin-bottom: 10px
   border: solid black 1px;
   padding: 2px;
-}
-
 
