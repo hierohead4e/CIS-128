@@ -12,14 +12,7 @@ h2 {
 }
 
 img {
-  float: none;
+  float: left;
 }
 
-div {
-  clear: left;
-}
-
-.clearfix {
-  overflow: auto;
-}
 
