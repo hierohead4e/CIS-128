@@ -20,16 +20,12 @@ p {
   margin-left: 400px;
 }
 
+img {
+  float: left;
+  margin-right: 10px;
+}
+
 ul {
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 400px;
-  margin-left: 400px;
-img {
-  float: left;
-  clear: left;
-  margin-right: 10px;
-  margin-bottom: 10px
-  border: solid black 1px;
-  padding: 2px;
-
