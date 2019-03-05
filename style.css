@@ -118,4 +118,8 @@
 		clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 	}	
 
+	@media only screen and (max-width:480px) {
+		body, h1, h2, h3, p, img, ul, li {
+			width: 100%
+		}
 
