@@ -1,21 +1,17 @@
-	body, h1, h2, h3, p, img, ul, li{
-		border:0; margin:0; padding:0;
-	}
-		/*the above is a very basic reset rule.  Every browser has a slightly different default for HTML tags.  By using this simple CSS reset, all the more glaring styles 
-		are reset and can now be set to whatever properties that would suit your website best. */
-	
-	body{
-		background:#eaf8fb;	/* a light blue background color. */
-		font-family:Arial, Helvetica, sans-serif; /* the font family for all text on the web page is now either arial, helvetica or a sans-serif font if those two are not available */
-		font-size:100%; /* all normal text on the web page has a base font size of 14px now */
-	}
+		.grid-container {
+		display: grid;
+		background:#eaf8fb;
+		font-family:Arial, Helvetica, sans-serif;
+		grid-gap: 10px;
+		padding: 10px;
+		font-size:100%;
 		
 	p{
 		letter-spacing:.04em; /* letter spacing sets the horizontal spacing (kerning) between letters in a block of text. */
 		line-height:21px; /* line height sets the vertical spacing between lines of text. */
 	}
 		
-	div#header{
+	.item1{
 		background-color:#333; /* a more specific way to set a background color */
 		background-image:url(images/headerbkgd.png); /* sets a background image in the header and the position it should sit */
 		background-repeat:no-repeat; /* sets a background image to repeat, repeat-x, repeat-y or not at all as written in this rule */
@@ -33,18 +29,18 @@
 		width:870px;	/* sets the width of the div to 900px. Remember that if you add padding to this element it will increase the size by the number of pixels in the padding. In this example the width is 900px and we have 15px to the left and right so the total width of the header will be (870px + 15px+15px=930px */
 		
 				}
-		
-	ul.navigation {
+	
+	.item2 {
 		list-style:none;	/* this removes the bullets from list elements */
 		margin-top:20px;	/* giving the ul a top margin of 20px */
 	}
 					
-	ul.navigation li{
+	ul.item2 li{
 		display:inline-block; /* an inline block element can have width and height applied to it / and if not, they only take up as much space as the content within allows */
 		margin:0 3px 5px;	/* this code adds a 3px margin to the left and right of the list elements, and 5px to the bottom of the list elements */
 					}
 					
-	ul.navigation li a{
+	ul.item2 li a{
 		background:#4a4a4a;	/* this is a dark grey background for the link */
 		color:#fff;	/* this makes the link text white */
 		-moz-border-radius:2px; 
@@ -55,7 +51,7 @@
 		text-decoration:none; /* this removes the normal underline that links usually have */
 	}
 						
-	ul.navigation li a:hover{
+	ul.item2 li a:hover{
 		background-color:#000; /*this is a hover pseudo class.  By designating a different background color, than the class for the a tag above, when a mouse hovers over these particular links, in the navigation bar, the background color will change to what's defined here */
 		
 	}
@@ -65,22 +61,22 @@
 		width:900px;
 	}
 				
-	div.col-right{
+	.item3{
 		float:right;
 		width:660px
 		}
 		
-	div.sidebar-left{
+	.item4{
 		float:left;
 		padding:0 10px;
 		width:200px;	/* when floating content next to each other, applying set widths will make the content play nice with each other. Change the width of the siebar, or take away the width of the above "div.col-right" and see what happens to get a better idea of how widths effect floats */
 		}
 		
-	div.sidebar-left a{
+	.item4 a{
 		color:#445e64;	/* this redefines all links in the left sidebar to this new color, as opposed to the default blue link color */
 	}
 	
-	div.sidebar-left a:hover{
+	.item4 a:hover{
 		text-decoration:none
 	}	/* when hovering over a link, in the sidebar, this turns off the underline */
 	
@@ -117,8 +113,4 @@
 	.clear{
 		clear:both; /* this clears floats.  This would be used to cancel out a float's behavior on content below it.  */
 	}	
-
-@media only screen and (max-width:480px) {
-	body, .header, .footer {width: 100%;}
-	#navigation, #content, #col-right, #sidebar-left {width: 100%;}
-}
+	}
