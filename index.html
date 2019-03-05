@@ -2,25 +2,26 @@
 <html lang="en">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-<link rel="stylesheet" type="text/css" href="style.css" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" type="text/css" href="style.css" media="all"/>
+<link rel="stylesheet" type="text/css" href="mobile.css" media="(max-width:480px)"/>
+<link rel="stylesheet" type="text/css" href="desktop.css" media="(min-width:481px)"/>
+<meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Wild Life</title>
 </head>
 
 <body>
-    <div id="header">
-        <h1>Welcome to Wildlife for Life</h1>
-        <h2>We fight for life</h2>
-        
-        <ul class="navigation">
-            <li><a href="index.html" title="home">Home</a></li>
-            <li><a href="#" title="contact">Contact Us</a></li>
-        </ul>
-    </div>
-    
-    <div class="content">
-    
-    <div class="col-right">
+    <div class="grid-container">
+		<div class="grid-item item1">
+			<h1>Welcome to Wildlife for Life</h1>
+			<h2>We fight for life</h2>
+        </div>
+		<div class="grid-item item2">
+			<ul class="navigation">
+				<li><a href="index.html" title="home">Home</a></li>
+				<li><a href="#" title="contact">Contact Us</a></li>
+			</ul>
+		</div>
+    <div class="grid-item item3">
         
         <h1>The Wild Life is great</h1><br />
         <p>Wild Life includes all non-domesticated plants, animals and other organisms.</p>
@@ -33,7 +34,7 @@
         <p>Anthropologists believe that the Stone Age people and hunter-gatherers relied on wildlife, both plants and animals, for their food. In fact, some species may have been hunted to extinction by early human hunters.</p>
     </div>
     
-    <div class="sidebar-left">
+    <div class="grid-item item4">
     	<h3>Favorite links</h3>
     	<ul class="list">
         	<li><a href="http://wildlife-museum.org/" title="Lindsay Wildlife Museum">Lindsay Wildlife Museum</a></li>
@@ -49,5 +50,6 @@
     <div id="footer">
         <p>We believe that we can all live together in Planet Earth</p>
     </div>
+	</div>
 </body>
 </html>
