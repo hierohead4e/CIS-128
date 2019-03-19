@@ -1,0 +1,26 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: "Helvetica", "Arial", san-serif;
+  font-size: 100%;
+  width: 100%;
+  background-color: #c2d5ff;
+  background-repeat: no-repeat;
+  background-position: 50% 0px;
+}
+p {
+  font-size: .95em;
+  margin: 0.25em 0;
+}
+h1, h2 {
+  font-family: "Times New Roman", serif;
+  margin: 0;
+  color: #001e60;
+  text-align: center;
+}
+
+.header {
+ height: 150px;
+}
