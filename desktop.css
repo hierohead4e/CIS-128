@@ -1,4 +1,0 @@
-@media screen and (min-width:481px) {
-	body, .header, .footer {width: 100%;}
-	#navigation, #content, #col-right, #sidebar-left, #clear {width: 100%;}
-}
