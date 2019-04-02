@@ -5,6 +5,10 @@ header { font-size: 1.7em;
 
 header h1 { color: DarkGrey; }
 
+body {
+    font-family: 'Syncopate';font-size: 22px;
+}
+
 img { float: left;
       height:5em;
 	  padding-right: 10px;
