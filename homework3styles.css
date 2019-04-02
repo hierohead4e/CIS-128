@@ -5,9 +5,4 @@ img { float: left;
 	  margin-top: 10px;
 }
 
-@keyframes slideRight {
-  from {background-position: left;}
-  to {background-position: right;}
-}
-
 div {min-height: 5.5em;}
