@@ -1,34 +1,26 @@
 <!DOCTYPE HTML>
 <html lang="en" manifest="manifest.json">
-
 <head>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	
-	<title>Progressive Web Application</title>
-	
-	<meta name="description" content="Example of progressive web application.">
-	
-	<link rel="manifest" href="manifest.json">
-	<link rel="stylesheet" href="indexstyles.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Progressive Web Application</title>
+<meta name="description" content="Example of progressive web application.">
+<link rel="manifest" href="manifest.json">
+<link rel="stylesheet" href="indexstyles.css" />
 </head>
-
 <body id="background">
-	<h1>Progressive Web Applications</h1>
-	
-	<p>
-	Progressive web applications (PWAs) are web applications that load like regular web pages or websites 
-	but can offer the user functionality such as working offline, push notifications, 
-	and device hardware access traditionally available only to native applications. 
-	PWAs combine the flexibility of the web with the experience of a native application.
-	</p>
-	
-	<select id="selectChangeBackground">
-		<option value="Blue">Blue</option>
-		<option value="Gold">Gold</option>
-	</select>
+<h1>Progressive Web Applications</h1>
+<p>
+Progressive web applications (PWAs) are web applications that load like regular web pages or websites 
+but can offer the user functionality such as working offline, push notifications, 
+and device hardware access traditionally available only to native applications. 
+PWAs combine the flexibility of the web with the experience of a native application.
+</p>
+<select id="selectChangeBackground">
+	<option value="Blue">Blue</option>
+	<option value="Gold">Gold</option>
+</select>
 	<input id="buttonChangeBackground" type="button" value="Change Background" />
-	
 <script>
 	if('serviceWorker' in navigator) {
 		navigator.serviceWorker.register("service-worker.js");
@@ -44,9 +36,7 @@
 	}
 
 	document.getElementById("buttonChangeBackground").addEventListener("click", updateBackground);
-
-	updateBackground();
+        updateBackground();
 </script>
 </body>
-
 </html>
