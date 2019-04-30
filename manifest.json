@@ -1,17 +1,6 @@
 {
-  "name": "lightblue",
-  "short_name": "blue",
-  "icons": [{
-    "src": "/images/lightblue.jpg",
-      "sizes": "512x512",
-      "type": "image/jpg"
-    }, {
-      "src": "/images/lightgold.jpg",
-      "sizes": "512x512",
-      "type": "image/jpg"
-    }],
-  "start_url": "/index.html",
-  "display": "standalone",
-  "background_color": "#3E4EB8",
-  "theme_color": "#2F3BA2"
+	"short_name": "PWA",
+	"icons": [],
+	"name": "PWA",
+	"start_url": "index.html"
 }
