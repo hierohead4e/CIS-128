@@ -12,6 +12,28 @@
   <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />	
   <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
   <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+  <script>
+     function getloc() {
+	 
+	navigator.geolocation.getCurrentPosition(get_coords,if_error);
+	 
+	function get_coords(position)
+	{
+	latitude=position.coords.latitude;
+	longitude=position.coords.longitude;
+	 
+	alert('Latitude is '+latitude+' and longitude is '+longitude);
+	}
+	 
+	function if_error(err)
+	{
+	if(err.code==1){alert('User Denied');}
+	if(err.code==2){alert('Position unavailable');}
+	if(err.code==3){alert('Timeout');}
+	}
+	} 
+  </script>
+
 <style>
 body {
     font-family: 'The Girl Next Door';font-size: 100%;
@@ -135,7 +157,10 @@ body {
     <h1>ABC Toys</h1>
   </header>
   <div data-role="content">
-    <p>We will include directions to our location prior to our grand opening.  Stay tuned... </p>
+    <form action="#" method="get">
+  <input type="submit" value="Get Location" onClick="getloc();">
+</form>
+
   </div>
  <footer data-role="footer" data-position="fixed">
     <nav data-role="navbar">
